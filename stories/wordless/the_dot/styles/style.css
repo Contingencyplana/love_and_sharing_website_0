@@ -1,0 +1,4 @@
+/* style.css — simple soothing background for The Dot */
+body{margin:0; background:linear-gradient(180deg,#fff5f8,#ffe6fa);
+display:flex; justify-content:center; align-items:center; height:100vh;}
+canvas{border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,.2);} 
