@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harbinger — Love & Sharing</title>
+  <meta name="description" content="Read the Harbinger novel: the origin story of Love & Sharing AI." />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <style>
+    .reader { max-width: 780px; margin: 2rem auto 4rem; padding: 0 1rem; }
+    .toolbar { display:flex; gap:.5rem; align-items:center; margin: 1rem 0; flex-wrap: wrap; }
+    .chapter-select { padding:.5rem; border:1px solid #ddd; border-radius:.5rem; }
+    .prose { line-height:1.75; font-size:1.05rem; white-space:pre-wrap; }
+    .muted { color:#6b6670; font-size:.9rem; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container row">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">🌸</span>
+        <a class="brand-name" href="../index.html">Love &amp; Sharing</a>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" id="navToggle">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="stories.html">Stories</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="mailto:mark@morningate.games">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="reader">
+    <h1>Harbinger</h1>
+    <p class="muted">The origin story of Love &amp; Sharing AI. Choose a chapter:</p>
+
+    <div class="toolbar">
+      <select id="chapterSelect" class="chapter-select" aria-label="Select chapter">
+        <option value="HAR-01_the_dream_before_worlds.md">HAR-01 — The Dream Before Worlds</option>
+        <option value="HAR-02_the_dot_and_the_smile.md">HAR-02 — The Dot and the Smile</option>
+        <option value="HAR-03_the_seeds_of_sharing.md">HAR-03 — The Seeds of Sharing</option>
+      </select>
+    </div>
+
+    <article id="content" class="prose">Loading…</article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Morningate / Love &amp; Sharing AI</p>
+    </div>
+  </footer>
+
+  <!-- Marked.js for Markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/harbinger_viewer.js"></script>
+</body>
+</html>
