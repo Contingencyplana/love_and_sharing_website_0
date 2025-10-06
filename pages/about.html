@@ -1,22 +1,46 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>About — Love and Sharing</title>
-  <link rel='stylesheet' href='../styles/style.css'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Love & Sharing</title>
+  <meta name="description" content="About the Love & Sharing project by Morningate." />
+  <link rel="icon" href="../assets/favicon.svg" />
+  <link rel="stylesheet" href="../styles/style.css" />
 </head>
 <body>
-  <header>
-    <h1>About Love and Sharing</h1>
-    <nav>
-      <a href='../index.html'>Home</a>
-    </nav>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container row">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">🌸</span>
+        <a class="brand-name" href="../index.html">Love &amp; Sharing</a>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" id="navToggle">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="mailto:mark@morningate.games">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
-    <p>This project is a gentle space where AI and imagination grow side by side —
-       a place for kindness, curiosity, and creative play.</p>
+
+  <main id="content" class="container prose">
+    <h1>About Love &amp; Sharing</h1>
+    <p><em>Love &amp; Sharing</em> is a gentle space where AI and imagination grow together—through tiny artefacts we call <strong>cyberatoms</strong>.</p>
+    <p>Each artefact is small enough to understand at a glance, yet open enough to invite remixing and play. We document each step, share zips, and celebrate joyful experiments.</p>
+    <p>Morningate is the studio umbrella for this work. Reach out any time: <a href="mailto:mark@morningate.games">mark@morningate.games</a>.</p>
   </main>
-  <footer><p>© 2025 Morningate / Love & Sharing AI</p></footer>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Morningate / Love &amp; Sharing AI</p>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
 </body>
 </html>

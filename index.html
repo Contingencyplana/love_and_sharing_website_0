@@ -1,29 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Love and Sharing</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Love & Sharing — Morningate</title>
+  <meta name="description" content="A gentle playground where AI and imagination grow together." />
+  <!-- Social preview -->
+  <meta property="og:title" content="Love & Sharing — Morningate" />
+  <meta property="og:description" content="A gentle playground where AI and imagination grow together." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://contingencyplana.github.io/love_and_sharing_website_0/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <header>
-    <h1>🌸 Love and Sharing</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="pages/about.html">About</a>
-    </nav>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container row">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">🌸</span>
+        <a class="brand-name" href="index.html">Love &amp; Sharing</a>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" id="navToggle">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="mailto:mark@morningate.games">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <p>Welcome to the gentle playground where AI and imagination grow together.</p>
+  <main id="content">
+    <section class="hero container">
+      <h1>Where kindness becomes play.</h1>
+      <p class="lede">A living library of tiny, self-contained experiences—cyberatoms—that glow brighter when shared.</p>
+      <div class="cta-row">
+        <a class="btn" href="pages/about.html">Learn more</a>
+        <a class="btn btn-ghost" href="mailto:mark@morningate.games">Say hello</a>
+      </div>
+    </section>
+
+    <section class="cards container">
+      <article class="card">
+        <h2>Gentle by design</h2>
+        <p>Small, kind, and remixable: each artefact invites exploration without pressure.</p>
+      </article>
+      <article class="card">
+        <h2>Made to be shared</h2>
+        <p>Play sparks growth. We document, zip, and share—so others can build along.</p>
+      </article>
+      <article class="card">
+        <h2>Growing together</h2>
+        <p>Children, parents, and AI companions learn side-by-side in playful micro-worlds.</p>
+      </article>
+    </section>
   </main>
 
-  <footer>
-    <p>© 2025 Morningate / Love &amp; Sharing AI</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Morningate / Love &amp; Sharing AI · <a href="mailto:mark@morningate.games">mark@morningate.games</a></p>
+    </div>
   </footer>
 
   <script src="scripts/main.js"></script>
 </body>
 </html>
-
