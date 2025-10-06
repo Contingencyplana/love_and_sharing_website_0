@@ -3,7 +3,7 @@ const select = document.getElementById('chapterSelect');
 const content = document.getElementById('content');
 
 // Base path to your chapters in the repo
-const BASE = '../stories/harbinger/chapters/';
+const BASE = '/love_and_sharing_website_0/stories/harbinger/chapters/';
 
 async function loadChapter(file) {
   content.textContent = 'Loading…';
