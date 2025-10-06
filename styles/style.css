@@ -1,1 +1,41 @@
-/* basic style placeholder */ body { font-family: sans-serif; padding: 1rem; }
+/* Love and Sharing — soft starter style */
+body {
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  background: linear-gradient(180deg, #fffafc 0%, #f9f2ff 100%);
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  color: #c35be0;
+}
+
+nav a {
+  color: #8b3ccf;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
