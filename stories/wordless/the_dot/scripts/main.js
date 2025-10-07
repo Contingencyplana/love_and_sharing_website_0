@@ -41,10 +41,16 @@
   // Resize canvas to device pixels
   function resize() {
     const dpr = Math.max(1, window.devicePixelRatio || 1);
+
+    // Detect fullscreen (no outer UI)
+    const isFull = !!document.fullscreenElement;
     const rectW = Math.floor(window.innerWidth);
-    const rectH = Math.floor(window.innerHeight - 120); // leave room for header/footer
+    const rectH = Math.floor(window.innerHeight);
+
+    // When fullscreen, use full height; otherwise leave header/footer space
     width = rectW;
-    height = Math.max(420, rectH);
+    height = isFull ? rectH : Math.max(420, rectH - 120);
+
     canvas.style.width = width + "px";
     canvas.style.height = height + "px";
     canvas.width = Math.floor(width * dpr);
@@ -124,6 +130,10 @@
 
   // Events
   window.addEventListener("resize", resize);
+  document.addEventListener("fullscreenchange", resize);
+  document.addEventListener("webkitfullscreenchange", resize); // Safari legacy
+  window.addEventListener("orientationchange", () => setTimeout(resize, 50));
+
   canvas.addEventListener("click", comfort, { passive: true });
   calmBtn.addEventListener("click", toggleCalm);
   fsBtn.addEventListener("click", toggleFullscreen);
