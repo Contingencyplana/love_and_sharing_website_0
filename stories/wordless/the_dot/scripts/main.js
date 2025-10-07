@@ -1,8 +1,10 @@
 /* The Dot — tiny, soothing micro-game
    - A soft background and a breathing dot in the center.
-   - Click/tap comforts the dot (brief glow).
+   - Click/tap comforts the dot (brief glow + chime).
    - Space toggles Calm mode (slower, softer breath).
    - F toggles fullscreen.
+   - Responsive: stays perfectly centered, always square,
+     and gently scales across screen sizes.
 */
 
 (() => {
@@ -11,6 +13,9 @@
 
   const calmBtn = document.getElementById("calmBtn");
   const fsBtn = document.getElementById("fsBtn");
+  const wrap = document.querySelector(".wrap");
+  const header = document.querySelector(".topbar");
+  const footer = document.querySelector(".bottombar");
 
   // State
   let width = 0, height = 0, t0 = performance.now();
@@ -38,21 +43,29 @@
     } catch {}
   }
 
-  // Resize canvas to device pixels
+  // Resize canvas (always square, responsive scaling)
   function resize() {
     const dpr = Math.max(1, window.devicePixelRatio || 1);
 
-    // Detect fullscreen (no outer UI)
-    const isFull = !!document.fullscreenElement;
-    const rectW = Math.floor(window.innerWidth);
-    const rectH = Math.floor(window.innerHeight);
+    const wrapRect = wrap.getBoundingClientRect();
+    const headH = header?.getBoundingClientRect().height || 0;
+    const footH = footer?.getBoundingClientRect().height || 0;
 
-    // When fullscreen, use full height; otherwise leave header/footer space
-    width = rectW;
-    height = isFull ? rectH : Math.max(420, rectH - 120);
+    const availableW = Math.floor(wrapRect.width);
+    const availableH = Math.floor(wrapRect.height - headH - footH);
 
+    // Keep canvas perfectly square
+    const side = Math.min(availableW, availableH);
+    width = side;
+    height = side;
+
+    // Center the square canvas
+    canvas.style.display = "block";
+    canvas.style.margin = "0 auto";
     canvas.style.width = width + "px";
     canvas.style.height = height + "px";
+
+    // Retina-safe scaling
     canvas.width = Math.floor(width * dpr);
     canvas.height = Math.floor(height * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -76,10 +89,14 @@
     ctx.fillStyle = g;
     ctx.fillRect(0, 0, width, height);
 
-    // Dot
+    // --- Dynamic dot scaling ---
+    // Smaller screens = slightly smaller dot, huge screens = slightly larger
+    const scaleFactor = clamp(Math.sqrt(width * height) / 600, 0.8, 1.25);
+
+    // Dot position and radius
     const cx = width / 2;
     const cy = height / 2;
-    const baseR = Math.min(width, height) * 0.08;
+    const baseR = Math.min(width, height) * 0.08 * scaleFactor;
     const r = lerp(baseR * 0.92, baseR * 1.08, breath) * (1 + 0.12 * comfortPulse);
 
     // Soft halo
@@ -120,9 +137,9 @@
   }
 
   function toggleFullscreen() {
-    const el = document.documentElement;
+    const target = wrap || document.documentElement;
     if (!document.fullscreenElement) {
-      (el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen)?.call(el);
+      (target.requestFullscreen || target.webkitRequestFullscreen || target.msRequestFullscreen)?.call(target);
     } else {
       (document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen)?.call(document);
     }
