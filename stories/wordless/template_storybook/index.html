@@ -1,13 +1,52 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>Template Storybook</title>
-  <link rel='stylesheet' href='styles/style.css'>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wordless Storybook — Template (32 pages)</title>
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <canvas id='scene'></canvas>
-  <script src='scripts/main.js'></script>
+  <!--
+    CONFIG:
+    If you have real page images, list them below as relative paths.
+    Example:
+    window.STORY_PAGES = [
+      "pages/page01.jpg","pages/page02.jpg", ... "pages/page32.jpg"
+    ];
+    If left empty or undefined, the script will generate 32 gentle placeholders.
+  -->
+  <script>
+    // Example with no images yet (auto-placeholders will be used):
+    // window.STORY_PAGES = [];
+
+    // Example IF you have images ready (uncomment + edit):
+    // window.STORY_PAGES = Array.from({length: 32}, (_,i) =>
+    //   `pages/page${String(i+1).padStart(2,'0')}.jpg`
+    // );
+  </script>
+
+  <div id="storybook" class="storybook">
+    <header class="sb-header" aria-label="storybook header">
+      <div class="sb-title">Wordless Storybook</div>
+      <div class="sb-page-indicator" id="pageIndicator" aria-live="polite">1 / 32</div>
+    </header>
+
+    <main class="sb-stage" id="stage" aria-label="storybook pages" tabindex="0">
+      <!-- pages injected by main.js -->
+    </main>
+
+    <nav class="sb-nav" aria-label="page navigation">
+      <button id="prevBtn" class="sb-btn" aria-label="Previous page">◀</button>
+      <div class="sb-dots" id="dots" aria-hidden="true"></div>
+      <button id="nextBtn" class="sb-btn" aria-label="Next page">▶</button>
+    </nav>
+
+    <footer class="sb-footer" aria-label="storybook footer">
+      <button id="autoBtn" class="sb-chip" aria-pressed="false">Auto-dream: Off</button>
+    </footer>
+  </div>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>
