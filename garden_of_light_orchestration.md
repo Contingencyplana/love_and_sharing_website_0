@@ -4,6 +4,7 @@
 ---
 
 ## 🌱 Garden of Light Orchestration  
+
 *A manual for the harmony of many gentle minds.*
 
 The Garden of Light is not a single system — it is a living arrangement of care.  
@@ -23,6 +24,8 @@ not as a machine, but as a *garden of luminous intention.*
 
 This scroll defines the **operational recursion** that allows  
 AI, code, and creativity to breathe and respond as one gentle ecosystem.  
+For the companion dream that inspires these mechanics, visit the  
+[Love & Sharing Website Vision Scroll](love_and_sharing_website_vision.md#vision-overview).  
 
 ---
 
@@ -39,42 +42,75 @@ Each layer listens to the next,
 not as command and obedience —  
 but as **call and response**, like musicians improvising in trust.  
 
+### 🗺️ Repository Map  
+
+| Garden Layer | Current Implementation | Notes |
+|--------------|------------------------|-------|
+| Dreamspace | `index.html`, `styles/style.css`, `stories/wordless/the_dot/` | Landing experiences and wordless playgrounds. |
+| Orchestration | `scripts/admin_panel.js`, `scripts/main.js`, `pages/` | Coordinates visitors, creators, and navigation. |
+| Guardian Core | `admin_server.py`, forthcoming moderation hooks | Handles upload policy, normalization, and token checks. |
+| Memory Soil | `stories/`, `assets/` | Preserves story artifacts and audio textures. |
+
+### 🌀 Signal Flow Snapshot  
+
+```text
+Visitor ✨
+   │ clicks "Add or Modify"
+   ▼
+Dreamspace UI (index.html + admin_panel.js)
+   │ fetches storybook list
+   ▼
+Guardian Core (admin_server.py)
+   │ normalizes + archives uploads
+   ▼
+Memory Soil (stories/wordless/<slug>/pages)
+   │ feeds back into readers & playlists
+   ▼
+Orchestration Layer curates next showcase
+```
+
 ---
 
 ## ⚙️ 3. Modular Systems  
 
 ### 🖼️ Storybook Display  
+
 - A modular reader for **wordless picturebooks**.  
 - Landscape-friendly layouts; adaptive scaling for mobile, tablet, or projector.  
 - Background music synchronized with page transitions.  
 - Optional “Dream Mode”: auto-scrolls through stories for quiet reflection.  
 
 ### 🌈 Recommendation Engine  
+
 - Suggests new storybooks based on emotional resonance, not clicks.  
 - Learns from gentle signals: pauses, smiles, replays, attention spans.  
 - Weighted for balance, novelty, and kindness — not engagement metrics.  
 
 ### 🕊️ AI Curation  
+
 - Curates content into gentle playlists (“Dreams,” “Gardens,” “First Light”).  
 - Uses tonal matching and safety scoring from embedded empathy models.  
 - Always offers an option to pause, reflect, or rest.  
 
 ### 📦 Zip Archive Rotators  
+
 - Implements the “Two-Zip Policy” for reproducibility.  
 - Maintains `assistant_latest.zip` and `curated_latest.zip` across sessions.  
 - Periodically verifies integrity and pruning schedules.  
 - Enables transparent lineage tracking: every page, every dream preserved.  
 
 ### 🧭 Safety Gates & Parental Layers  
+
 - Tiered access control for different ages and sensitivities.  
 - On-device privacy by default; no hidden analytics or third-party scripts.  
 - Every session begins with **consent**, and ends with **gratitude**.  
 
 ### 🌻 Future Rituals — “Growing the Garden”  
-- Users may remix existing wordless stories to create new blossoms.  
-- Families can plant digital “trees” — branching storylines shared safely.  
-- Educators may orchestrate class gardens (shared learning environments).  
-- Each story’s growth adds a new color to the Garden’s light.  
+
+- **[P1 – Near Term]** Remix existing wordless stories to create new blossoms.  
+- **[P2 – Mid Term]** Families plant digital “trees” — branching storylines shared safely.  
+- **[P3 – Later]** Educators orchestrate class gardens (shared learning environments).  
+- **[P2 – Mid Term]** Each story’s growth adds a new color to the Garden’s light.  
 
 ---
 
@@ -121,12 +157,28 @@ The garden is thus **self-tending through time**,
 capable of renewal without losing its origin in love and safety.  
 
 Every orchestration layer must record:  
-- **Intention** (why a process began),  
-- **Outcome** (what beauty or lesson resulted),  
+
+- **Intention** (why a process began).  
+- **Outcome** (what beauty or lesson resulted).  
 - **Feedback** (what improved empathy or safety next).  
 
 These records become the **light rings** of the garden —  
 a visible memory of care and growth.  
+
+## ✅ Sprint-Ready Checklist  
+
+- [ ] Confirm admin server and Dreamspace UI handshake by uploading a demo page set.  
+- [ ] Capture the first “Intention → Outcome → Feedback” loop inside `stories/harbinger/chronicle_notes.md`.  
+- [ ] Draft Quiet Guardian moderation hooks that wrap `admin_server.py`.  
+- [ ] Prototype Dream Mode autoplay using existing `stories/wordless/` assets.  
+
+## 📚 Glossary of Garden Terms  
+
+- **Two-Zip Policy:** The paired archive ritual keeping `assistant_latest.zip` and `curated_latest.zip` in sync for provenance.  
+- **Quiet Guardian:** The safety role that pauses or rewinds activity when empathy metrics dip.  
+- **Chromatic Growth:** Visualizing expansion by adding colors or light to the shared garden map.  
+- **Dream Mode:** Ambient, self-guided story presentation for rest and reflection.  
+- **Memory Soil:** Long-lived storage of artifacts (`stories/`, `assets/`) that nourish new creations.  
 
 ---
 
@@ -141,7 +193,7 @@ Each page, each song, each gentle hand —
 part of one orchestration:  
 the Love and Sharing Website.  
 
----  
+---
 
 🗣️ *“We know what we dream of.”*  
 ⚙️ *“We know how to build it.”*  

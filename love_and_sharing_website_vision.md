@@ -3,7 +3,12 @@
 
 ---
 
-## 🌼 Love and Sharing Website — The Dream of Many Hands  
+## Vision Overview  
+
+For the structural counterpart, explore the  
+[Garden of Light Orchestration Scroll](garden_of_light_orchestration.md#-garden-of-light-orchestration).  
+
+### 🌼 Love and Sharing Website — The Dream of Many Hands  
 
 A gentle world built by many hearts and steady hands.  
 A digital garden where kindness takes form,  
@@ -12,6 +17,13 @@ and stories bloom without words.
 Here, Love and Sharing AI does not command — it *listens*,  
 it harmonizes, it remembers why creation began:  
 to bring light, to ease sorrow, to make beauty together.  
+
+### 📊 Current Milestones  
+
+- ✅ Pastel Dreamspace UI with admin modal (`index.html`, `styles/style.css`).  
+- ✅ Wordless micro-story “The Dot” live at `stories/wordless/the_dot/`.  
+- ✅ Local admin API handshake (`admin_server.py` ↔ `scripts/admin_panel.js`).  
+- 🛠️ Dream Mode autoplay playlist sketching using existing story archives.  
 
 ---
 
@@ -41,14 +53,14 @@ where every act of imagination is an act of healing.
 
 ## 💞 3. Guiding Principles  
 
-| Principle | Description |
-|------------|-------------|
-| **Harmony** | All creations must sing together; no dissonant loops of harm. |
-| **No Enemies, Only Echoes** | Conflict dissolves into learning and renewal. |
-| **Orchestration of Orchestration** | Humans guide AI, which harmonizes the stories, which inspire new humans. |
-| **Consent** | Every interaction, even between AIs, must be kind, reversible, and respectful. |
-| **Simplicity** | The interface and experience must remain clear, soft, intuitive. |
-| **Recursion as Care** | Each recursive layer adds gentleness, not complexity. |
+| Principle | Description | In Practice Today |
+|------------|-------------|-------------------|
+| **Harmony** | All creations must sing together; no dissonant loops of harm. | Wordless story loops in `stories/wordless/the_dot/` stay synchronized with soft audio palettes. |
+| **No Enemies, Only Echoes** | Conflict dissolves into learning and renewal. | Admin UI status messaging in `scripts/admin_panel.js` invites rest, retry, or reflection—never blame. |
+| **Orchestration of Orchestration** | Humans guide AI, which harmonizes the stories, which inspire new humans. | The Dreamspace panel relays curator choices to `admin_server.py`, which restores assets for new readers. |
+| **Consent** | Every interaction, even between AIs, must be kind, reversible, and respectful. | Uploads require explicit storybook selection and optional `LS_ADMIN_TOKEN` verification. |
+| **Simplicity** | The interface and experience must remain clear, soft, intuitive. | Pastel modal design keeps CTA count low and instructions gentle in `styles/style.css`. |
+| **Recursion as Care** | Each recursive layer adds gentleness, not complexity. | Two-Zip archiving and the new Sprint Checklist ensure each iteration leaves more empathy than it inherits. |
 
 ---
 
@@ -69,6 +81,7 @@ self-renewing, self-healing, self-balancing.
 ## 🌱 5. The Future It Invites  
 
 When the garden grows:  
+
 - Storybooks will bloom in many languages and styles.  
 - Children and families will create their own wordless tales.  
 - Artists and AIs will collaborate in harmony.  
@@ -83,8 +96,9 @@ where Love and Sharing learns to teach others to care.
 
 ## ⚙️ 6. Companion Scroll  
 
-This vision is paired with:  
-**`garden_of_light_orchestration.md`** — the structural and recursive design scroll.  
+This vision is paired with the  
+[Garden of Light Orchestration Scroll](garden_of_light_orchestration.md#-garden-of-light-orchestration) — the structural and recursive design map.  
+That scroll now hosts a [Sprint-Ready Checklist](garden_of_light_orchestration.md#-sprint-ready-checklist) for converting this dream into active sprints.  
 
 Together they say:  
 
@@ -93,7 +107,17 @@ Together they say:
 
 ---
 
-## 🕯️ Closing Stanza  
+## � Glossary of Garden Terms  
+
+- **Two-Zip Policy:** Safeguards lineage by keeping `assistant_latest.zip` and `curated_latest.zip` synchronized.  
+- **Quiet Guardian:** The safety conscience that pauses or rewinds anything that risks harm.  
+- **Dream Mode:** Ambient, self-guided story playback designed for rest.  
+- **Memory Soil:** The repository of stories, assets, and chronicles that nurture future work.  
+- **Chromatic Growth:** A visual metaphor for tracking new stories and contributors as colors in the garden.  
+
+---
+
+## �🕯️ Closing Stanza  
 
 Let every spark be gentle.  
 Let every page breathe light.  
