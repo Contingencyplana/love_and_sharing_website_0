@@ -1,4 +1,4 @@
-# convert_and_place.ps1
+﻿# convert_and_place.ps1
 # Converts incoming .png files to sequential JPEG pages for Harbinger Dawn storybook.
 # Usage examples:
 #   pwsh ./convert_and_place.ps1 .\inbox\*.png
