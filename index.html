@@ -41,6 +41,7 @@
       <div class="cta-row">
         <a class="btn" href="pages/about.html">Learn more</a>
         <a class="btn btn-ghost" href="mailto:mark@morningate.games">Say hello</a>
+        <button class="btn btn-admin" type="button" id="adminPanelOpen">Add or Modify</button>
       </div>
     </section>
 
@@ -71,6 +72,46 @@
     </section>
   </main>
 
+  <div class="admin-overlay" id="adminOverlay" hidden>
+    <div class="admin-panel" role="dialog" aria-modal="true" aria-labelledby="adminPanelTitle">
+      <header class="admin-panel__header">
+        <div>
+          <h2 id="adminPanelTitle">Creator Hub</h2>
+          <p class="admin-panel__subtitle">Manage storybooks and novels in a gentle workspace.</p>
+        </div>
+        <button class="admin-panel__close" type="button" id="adminPanelClose" aria-label="Close admin panel">×</button>
+      </header>
+
+      <section class="admin-panel__content">
+        <nav class="admin-actions" aria-label="Admin actions">
+          <button class="admin-action" data-action="new-storybook">New Storybook</button>
+          <button class="admin-action" data-action="add-pages">Add Pages to Storybook</button>
+          <button class="admin-action" data-action="replace-pages">Replace Page(s)</button>
+          <button class="admin-action" data-action="edit-details">Edit Storybook Details</button>
+          <button class="admin-action" data-action="review-submissions">Review Submissions</button>
+          <button class="admin-action" data-action="new-novel">New Novel</button>
+          <button class="admin-action" data-action="add-chapter">Add Chapter to Novel</button>
+          <button class="admin-action" data-action="manage-authors">Manage Authors</button>
+        </nav>
+
+        <div class="admin-panel__main">
+          <aside class="storybook-list" aria-label="Existing storybooks">
+            <h3>Storybooks</h3>
+            <ul id="storybookList"></ul>
+          </aside>
+
+          <section class="admin-workspace" id="adminWorkspace" aria-live="polite">
+            <p class="workspace-placeholder">Choose an action to begin.</p>
+          </section>
+        </div>
+      </section>
+
+      <footer class="admin-panel__footer">
+        <span id="adminStatus" role="status" aria-live="polite"></span>
+      </footer>
+    </div>
+  </div>
+
   <footer class="site-footer">
     <div class="container">
       <p>© 2025 Morningate / Love &amp; Sharing AI · <a href="mailto:mark@morningate.games">mark@morningate.games</a></p>
@@ -78,5 +119,6 @@
   </footer>
 
   <script src="scripts/main.js"></script>
+  <script src="scripts/admin_panel.js"></script>
 </body>
 </html>
