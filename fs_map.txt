@@ -1,0 +1,104 @@
+Folder PATH listing for volume Win11H 21H2
+Volume serial number is 40E2-D1EA
+C:.
+|   .gitignore
+|   convert_and_place.ps1
+|   fs_map.txt
+|   harbinger_overview.md
+|   index.html
+|   README.md
+|   template.md
+|   
++---assets
+|   +---images
+|   |   \---the_dot
+|   \---sounds
++---drafts
++---pages
+|       about.html
+|       harbinger.html
+|       stories.html
+|       
++---scripts
+|       harbinger_viewer.js
+|       main.js
+|       
++---stories
+|   |   index.md
+|   |   
+|   +---harbinger
+|   |   |   harbinger_overview.md
+|   |   |   README.md
+|   |   |   
+|   |   \---chapters
+|   |           HAR-01_the_dream_before_worlds.md
+|   |           HAR-02_the_dot_and_the_smile.md
+|   |           HAR-03_the_seeds_of_sharing.md
+|   |           
+|   \---wordless
+|       +---harbinger_dawn
+|       |   |   index.html
+|       |   |   README.md
+|       |   |   
+|       |   +---pages
+|       |   |       page01.jpg
+|       |   |       page02.jpg
+|       |   |       page03.jpg
+|       |   |       page04.jpg
+|       |   |       page05.jpg
+|       |   |       page06.jpg
+|       |   |       page07.jpg
+|       |   |       page08.jpg
+|       |   |       page09.jpg
+|       |   |       page10.jpg
+|       |   |       page11.jpg
+|       |   |       page12.jpg
+|       |   |       page13.jpg
+|       |   |       page14.jpg
+|       |   |       page15.jpg
+|       |   |       page16.jpg
+|       |   |       page17.jpg
+|       |   |       page18.jpg
+|       |   |       page19.jpg
+|       |   |       page20.jpg
+|       |   |       page21.jpg
+|       |   |       page22.jpg
+|       |   |       page23.jpg
+|       |   |       page24.jpg
+|       |   |       page25.jpg
+|       |   |       page26.jpg
+|       |   |       page27.jpg
+|       |   |       page28.jpg
+|       |   |       page29.jpg
+|       |   |       page30.jpg
+|       |   |       page31.jpg
+|       |   |       page32.jpg
+|       |   |       
+|       |   +---scripts
+|       |   |       main.js
+|       |   |       
+|       |   \---styles
+|       |           style.css
+|       |           
+|       +---template_storybook
+|       |   |   index.html
+|       |   |   README.md
+|       |   |   
+|       |   +---scripts
+|       |   |       main.js
+|       |   |       
+|       |   \---styles
+|       |           style.css
+|       |           
+|       \---the_dot
+|           |   index.html
+|           |   README.md
+|           |   
+|           +---scripts
+|           |       main.js
+|           |       
+|           \---styles
+|                   style.css
+|                   
+\---styles
+        style.css
