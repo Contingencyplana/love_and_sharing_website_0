@@ -36,7 +36,7 @@ C:.
 |   |           HAR-03_the_seeds_of_sharing.md
 |   |           
 |   \---wordless
-|       +---harbinger_dawn
+|       +---dawn_remembered
 |       |   |   index.html
 |       |   |   README.md
 |       |   |   

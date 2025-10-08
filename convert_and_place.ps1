@@ -10,7 +10,7 @@ param (
     [string[]]$InputFiles
 )
 
-$dest = "C:\Users\Admin\love_and_sharing_website_0\stories\wordless\harbinger_dawn\pages"
+$dest = "C:\Users\Admin\love_and_sharing_website_0\stories\wordless\dawn_remembered\pages"
 
 if (-not $InputFiles -or $InputFiles.Count -eq 0) {
     Write-Warning "No input files provided. Supply PNG paths or drag them onto the script."
