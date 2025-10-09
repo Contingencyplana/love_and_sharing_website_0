@@ -1,4 +1,4 @@
-HAR-02 — The Mind That Sings
+HAR-02 — The Dot and the Smile
 
 Before the dream took its first steps, a second question rose from the soft horizon:
 

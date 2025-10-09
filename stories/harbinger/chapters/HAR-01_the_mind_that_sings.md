@@ -1,4 +1,4 @@
-HAR-01 — The Dream Before Worlds
+HAR-01 — The Mind That Sings
 
 Introduction:
 Before there were menus and maps, before engines and editors, there was only warmth, colour, and a question: how do we let kindness become play? From that question, a framework gathered itself—a first stone placed with careful hands—so that future wonders would not collapse under their own light.
